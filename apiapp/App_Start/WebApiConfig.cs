@@ -2,7 +2,7 @@
 using System.Web.Http;
 using Swashbuckle.Application;
 
-namespace apiapp
+namespace magic_company_name_magic.magic_product_name_magic
 {
 	public static class WebApiConfig
 	{
@@ -16,6 +16,8 @@ namespace apiapp
 
 		public static void SetupRoutes(HttpConfiguration config)
 		{
+			Contract.Requires(config != null);
+
 			config.MapHttpAttributeRoutes();
 			config.Routes.MapHttpRoute(
 				name: "magic_application_name_magicApi",
@@ -28,7 +30,9 @@ namespace apiapp
 		{
 			Contract.Requires(config != null);
 
-			config.EnableSwagger(SetupSwaggerConfig).EnableSwaggerUi();
+			var swaggerConfiguration = config.EnableSwagger(SetupSwaggerConfig);
+			Contract.Assume(swaggerConfiguration != null);
+			swaggerConfiguration.EnableSwaggerUi();
 		}
 
 		public static void SetupSwaggerConfig(SwaggerDocsConfig swaggerDocsConfig)
