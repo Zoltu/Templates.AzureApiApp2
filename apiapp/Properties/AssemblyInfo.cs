@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-[assembly: AssemblyTitle("apiapp")]
+[assembly: AssemblyTitle("magic_application_name_magic")]
 [assembly: AssemblyDescription("magic_description_magic")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("magic_company_name_magic")]

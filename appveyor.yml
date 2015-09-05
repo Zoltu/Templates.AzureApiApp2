@@ -21,7 +21,3 @@ before_build:
 build:
   project: magic_company_name_magic.magic_product_name_magic.magic_application_name_magic.sln
   verbosity: minimal
-
-artifacts:
-  - path: Code/bin/**/*.dll
-  - path: Code/bin/**/*.pdb
