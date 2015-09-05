@@ -34,4 +34,3 @@ build:
 #    secure: <userPWD>
 #  ntlm: false
 #  remove_files: false
-#  artifact: Web
