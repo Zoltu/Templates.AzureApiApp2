@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>apiapp</RootNamespace>
-    <AssemblyName>apiapp</AssemblyName>
+    <AssemblyName>magic_company_name_magic.magic_product_name_magic</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
