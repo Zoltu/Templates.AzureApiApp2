@@ -1,3 +1,5 @@
+os: Visual Studio 2015
+
 branches:
   only:
     - master
@@ -21,3 +23,15 @@ before_build:
 build:
   project: magic_company_name_magic.magic_product_name_magic.magic_application_name_magic.sln
   verbosity: minimal
+  publish_wap: true
+
+#deploy:
+#  provider: WebDeploy
+#  server: https://<publishUrl>/msdeploy.axd?site=<msdeploySite>
+#  website: <msdeploySite>
+#  username: <userName>
+#  password:
+#    secure: <userPWD>
+#  ntlm: false
+#  remove_files: false
+#  artifact: Web
